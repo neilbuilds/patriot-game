@@ -602,3 +602,10 @@ canvas {
     justify-content: center;
   }
 }
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
