@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PATRIOT interactive classified assessment and surveillance-grid mini game." />
+  <title>PATRIOT | Classified Access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
+
+  <main class="app-shell">
+    <section id="hero" class="screen active hero-screen">
+      <div class="status-bar">
+        <span>CLASSIFIED NODE: US-RELEASE</span>
+        <span id="clock">00:00:00</span>
+      </div>
+
+      <div class="hero-content">
+        <div class="eyebrow">NATIONAL SECURITY PROTOCOL</div>
+        <h1>PATRIOT</h1>
+        <p class="typing" id="typingText">INITIATING NATIONAL SECURITY PROTOCOL...</p>
+        <p class="hero-copy">A covert intelligence file has been exposed. Your choices will determine your clearance, your threat level, and whether you survive the surveillance grid.</p>
+        <button class="primary-btn" id="startBtn">ENTER THE SYSTEM</button>
+      </div>
+
+      <div class="intel-feed">
+        <div>FACIAL MATCH: PENDING</div>
+        <div>SIGNAL TRACE: 13%</div>
+        <div>OPERATIVE STATUS: UNKNOWN</div>
+        <div>TRUST PROTOCOL: FAILED</div>
+      </div>
+    </section>
+
+    <section id="quiz" class="screen quiz-screen">
+      <div class="panel dossier-panel">
+        <div class="panel-header">
+          <span>PSYCHOLOGICAL ASSESSMENT</span>
+          <span id="questionCounter">01 / 06</span>
+        </div>
+        <div class="progress-track"><div id="quizProgress" class="progress-fill"></div></div>
+        <h2 id="questionText">Question</h2>
+        <div id="answers" class="answer-grid"></div>
+      </div>
+    </section>
+
+    <section id="result" class="screen result-screen">
+      <div class="result-card" id="resultCard">
+        <div class="classified-stamp">CLASSIFIED</div>
+        <p class="eyebrow">OPERATIVE PROFILE CONFIRMED</p>
+        <h2 id="resultTitle">THE OPERATOR</h2>
+        <p id="resultDescription">Tactical. Loyal. Fearless.</p>
+        <div class="codename-box">
+          <span>AGENT</span>
+          <strong id="codename">SHADOW-17</strong>
+        </div>
+        <div class="threat-grid">
+          <div><span>STATUS</span><strong>ACTIVE</strong></div>
+          <div><span>THREAT</span><strong id="threatLevel">EXTREME</strong></div>
+          <div><span>PERK</span><strong id="gamePerk">FASTER MOVEMENT</strong></div>
+        </div>
+        <p class="share-line" id="shareLine">Some wars are won before the first shot.</p>
+        <button class="primary-btn" id="playGridBtn">ESCAPE THE SURVEILLANCE GRID</button>
+        <button class="secondary-btn" id="restartQuizBtn">RETAKE ASSESSMENT</button>
+      </div>
+    </section>
+
+    <section id="game" class="screen game-screen">
+      <div class="game-layout">
+        <div class="game-hud">
+          <div><span>TIME</span><strong id="survivalTime">00:00</strong></div>
+          <div><span>TRACE</span><strong id="traceLevel">0%</strong></div>
+          <div><span>CLASS</span><strong id="operativeClass">OPERATOR</strong></div>
+          <button class="secondary-btn small" id="exitGameBtn">EXIT</button>
+        </div>
+        <canvas id="gridCanvas" width="900" height="520"></canvas>
+        <div class="mobile-controls">
+          <button data-dir="up">▲</button>
+          <div>
+            <button data-dir="left">◀</button>
+            <button data-dir="down">▼</button>
+            <button data-dir="right">▶</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gameover" class="screen result-screen">
+      <div class="result-card gameover-card">
+        <div class="classified-stamp red">TRACE COMPLETE</div>
+        <p class="eyebrow">OPERATIVE COMPROMISED</p>
+        <h2>YOU WERE SEEN</h2>
+        <p id="finalStats">YOU SURVIVED: 00:42</p>
+        <p class="share-line">Only 4% reached extraction.</p>
+        <div class="cta-row">
+          <button class="primary-btn" id="retryGameBtn">RETRY MISSION</button>
+          <button class="secondary-btn" id="homeBtn">RETURN TO SYSTEM</button>
+        </div>
+        <a class="ticket-link" href="#" onclick="alert('Replace this link with your ticketing URL.'); return false;">BOOK TICKETS NOW</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="glitchAlert" class="glitch-alert">WE KNOW WHO YOU ARE</div>
+  <script src="script.js"></script>
+</body>
+</html>
