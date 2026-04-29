@@ -72,7 +72,7 @@ const profiles = {
     share: 'You don’t react. You calculate.',
     perk: 'SEES HIDDEN TRAPS',
     threat: 'SEVERE',
-    image: 'assets/characters/strategist.jpg'
+    image: 'strategist.png'
   },
 
   operator: {
@@ -83,7 +83,7 @@ const profiles = {
     share: 'Some wars are won before the first shot.',
     perk: 'FASTER MOVEMENT',
     threat: 'EXTREME',
-    image: 'assets/characters/operator.jpg'
+    image: 'operator.png'
   },
 
   ghost: {
@@ -94,7 +94,7 @@ const profiles = {
     share: 'Truth is whatever survives.',
     perk: 'TEMPORARY INVISIBILITY',
     threat: 'UNKNOWN',
-    image: 'assets/characters/ghost.jpg'
+    image: 'ghost.png'
   },
 
   insider: {
@@ -105,7 +105,7 @@ const profiles = {
     share: 'The system trusted the wrong person.',
     perk: 'BYPASSES CHECKPOINTS',
     threat: 'HIGH',
-    image: 'assets/characters/insider.jpg'
+    image: 'insider.png'
   },
 
   patriot: {
@@ -116,7 +116,7 @@ const profiles = {
     share: 'You sacrifice yourself before the mission.',
     perk: 'TRACE RESISTANCE',
     threat: 'NATIONAL',
-    image: 'assets/characters/patriot.jpg'
+    image: 'patriot.png'
   }
 };
 
