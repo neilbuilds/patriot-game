@@ -253,6 +253,10 @@ function showResult() {
 }
 
 document.getElementById('startBtn').onclick = startQuiz;
+document.getElementById('directMissionBtn').onclick = () => {
+  selectedProfile = 'operator';
+  startGame();
+};
 document.getElementById('restartQuizBtn').onclick = startQuiz;
 document.getElementById('playGridBtn').onclick = () => startGame();
 document.getElementById('exitGameBtn').onclick = () => showScreen('result');
