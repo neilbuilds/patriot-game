@@ -50,25 +50,86 @@
     </section>
 
     <section id="result" class="screen result-screen">
-      <div class="result-card" id="resultCard">
-        <div class="classified-stamp">CLASSIFIED</div>
-        <p class="eyebrow">OPERATIVE PROFILE CONFIRMED</p>
-        <h2 id="resultTitle">THE OPERATOR</h2>
-        <p id="resultDescription">Tactical. Loyal. Fearless.</p>
-        <div class="codename-box">
-          <span>AGENT</span>
-          <strong id="codename">SHADOW-17</strong>
-        </div>
-        <div class="threat-grid">
-          <div><span>STATUS</span><strong>ACTIVE</strong></div>
-          <div><span>THREAT</span><strong id="threatLevel">EXTREME</strong></div>
-          <div><span>PERK</span><strong id="gamePerk">FASTER MOVEMENT</strong></div>
-        </div>
-        <p class="share-line" id="shareLine">Some wars are won before the first shot.</p>
-        <button class="primary-btn" id="playGridBtn">ESCAPE THE SURVEILLANCE GRID</button>
-        <button class="secondary-btn" id="restartQuizBtn">RETAKE ASSESSMENT</button>
+  <div class="result-card cinematic-result-card" id="resultCard">
+
+    <div class="result-left">
+
+      <div class="portrait-frame">
+        <img
+          id="resultImage"
+          src="assets/characters/operator.jpg"
+          alt="PATRIOT Character"
+        />
       </div>
-    </section>
+
+    </div>
+
+    <div class="result-right">
+
+      <div class="classified-stamp">CLASSIFIED</div>
+
+      <p class="eyebrow">
+        PSYCHOLOGICAL ASSESSMENT COMPLETE
+      </p>
+
+      <h2 id="resultTitle">THE OPERATOR</h2>
+
+      <p class="result-tagline" id="resultTagline">
+        TACTICAL. FEARLESS. LOYAL.
+      </p>
+
+      <p id="resultDescription" class="result-description">
+        You lead from the front. You remain calm under pressure.
+        You become most dangerous when cornered.
+      </p>
+
+      <div class="codename-box">
+        <span>OPERATIVE CODE</span>
+        <strong id="codename">OP-84-R7</strong>
+      </div>
+
+      <div class="threat-grid">
+
+        <div>
+          <span>STATUS</span>
+          <strong>ACTIVE</strong>
+        </div>
+
+        <div>
+          <span>THREAT</span>
+          <strong id="threatLevel">EXTREME</strong>
+        </div>
+
+        <div>
+          <span>PERK</span>
+          <strong id="gamePerk">FASTER MOVEMENT</strong>
+        </div>
+
+      </div>
+
+      <p class="share-line" id="shareLine">
+        Some wars are won before the first shot.
+      </p>
+
+      <div class="mission-box">
+        <p class="mission-label">YOUR NEXT MISSION</p>
+        <h3>ESCAPE THE SURVEILLANCE GRID</h3>
+      </div>
+
+      <div class="cta-row">
+        <button class="primary-btn" id="playGridBtn">
+          BEGIN MISSION
+        </button>
+
+        <button class="secondary-btn" id="restartQuizBtn">
+          RETAKE ASSESSMENT
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
     <section id="game" class="screen game-screen">
       <div class="game-layout">
